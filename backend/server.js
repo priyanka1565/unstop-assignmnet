@@ -1,9 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const UserRouter = require("./routes/UserRoute")
+const User = require("./model/UserModel")
+const app = express()
 
 const connect = require("./connection/database")
 
-const app = express();
+app.use(express.json());
+app.use("/UserRouter", UserRouter); 
+
+
 
 app.listen(8080, async() => {
     try {
@@ -16,4 +22,5 @@ app.listen(8080, async() => {
         
     }
    
+
 });
