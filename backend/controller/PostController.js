@@ -6,7 +6,7 @@ var uniqid = require("uniqid");
 const createPost = async (req, res) => {
   try {
     const { content, user } = req.body;
-    const FindUser = await UserModel.findOne({ id: user });
+    const FindUser = await UserModel.findOne({ _id: user });
     if (!FindUser) return res.status(400).send({ error: "User not found" });
     const post = new PostModel({
       content,

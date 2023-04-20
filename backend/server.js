@@ -10,6 +10,7 @@ const connect = require("./connection/database")
 
 app.use(express.json());
 app.use("/UserRouter", UserRouter); 
+app.use("/PostRoute", PostRoute); 
 
 
 
