@@ -1,24 +1,23 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const UserRouter = require("./routes/UserRoute");
-const PostRoute = require("./routes/PostRoute")
-const User = require("./model/UserModel")
-const Post = require("./model/PostMoel")
+const SeatRouter = require("./routes/SeatRoute");
 const app = express()
-
 const connect = require("./connection/database")
 
+// GLOBAL MIDDLEWARE 
 app.use(express.json());
-app.use("/UserRouter", UserRouter); 
-app.use("/PostRoute", PostRoute); 
 
+require("dotenv").config;
 
+app.use("/book-my-seat", SeatRouter); 
 
+const url = process.env.LOCAL_URL;
+const Port = process.env.PORT ? process.env.PORT : 5000
 
-app.listen(8080, async() => {
+app.listen(Port, async() => {
     try {
-        connect.connect()
-         console.log(`http://localhost:8080`);
+        await connect.connect()
+        console.log("Database connected successfully!")
+         console.log(`app is running on ${url}:${Port}`);
         
     }
     catch (error) {
