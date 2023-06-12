@@ -1,0 +1,56 @@
+.SeatBooking {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.seat {
+    background-color: green;
+}
+
+.seat--reserved {
+    background-color: gray;
+}
+
+.seat--selected {
+    background-color: blue;
+ 
+}
+
+.seat-picker {
+    margin: auto;
+}
+
+
+div.blank {
+    display: none;
+}
+
+.screen {
+     background-color: pink;
+    width: 30%;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: 2px solid teal;
+    text-decoration: aqua;
+    cursor: pointer;
+}
+
+.seat-select {
+ width: 30%;
+ background-color: pink;
+ text-align: start;
+ margin-left: 20px;
+ margin-top: 50px;
+ border: 2px solid teal;
+ text-decoration: aqua;
+ cursor: pointer;
+
+}
+
+.seat-select>h1 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+

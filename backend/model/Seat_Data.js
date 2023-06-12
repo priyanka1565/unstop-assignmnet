@@ -20,19 +20,9 @@ const seatSchema = new mongoose.Schema(
     },
     total_seat: {
       type: Number,
-      default:80,
     },
     seat_map: {
       type:String,
-    },
-    row_number: {
-      type: Number,
-    },
-    start_of_current_row: {
-      type: Number,
-    },
-    end_of_current_row: {
-      type: Number,
     },
     is_available: {
       type: Boolean,

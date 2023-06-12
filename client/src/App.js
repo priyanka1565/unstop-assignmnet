@@ -1,14 +1,17 @@
+import logo from './logo.svg';
 import './App.css';
-import AllRoutes from './Components/Routes/AllRoutes';
-
+import Login from './Login';
+import Product from './Products';
+import SeatBooking from './Components/SeatBooking';
 
 
 function App() {
   return (
     <>
-     
-      <AllRoutes/>
+      <SeatBooking/>
     </>
+    
+    
   );
 }
 
