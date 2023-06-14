@@ -1,15 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Login from './Login';
-import Product from './Products';
 import SeatBooking from './Components/SeatBooking';
-
-
+import CreateSeat from './Components/CreateSeat';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <>
-      <SeatBooking/>
-    </>
+    
+      <BrowserRouter>
+      <Routes>
+        <Route path="/create-seat" element={< CreateSeat />}></Route>
+        <Route path='/' element={<SeatBooking/>}></Route>
+      </Routes>
+    </BrowserRouter>
+  
     
     
   );
