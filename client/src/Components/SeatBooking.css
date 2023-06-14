@@ -8,15 +8,18 @@
     align-self: center;
     height: fit-content;
     width: 90%;
+    cursor: pointer;
   
     
 }
 .seat_book{
+     cursor: pointer;
     height: 50px;
     width: 50%;
     border: 2px solid teal;
     align-items: center;
     justify-content: center;
+   
 }
 h3{
     margin-left: 20%;
@@ -38,4 +41,7 @@ button{
 h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+.bookSeat{
+    cursor: pointer;
 }

@@ -66,7 +66,7 @@ const SeatBooking = () => {
       <div className='container'>
         {data?.map((value) => {
           return (
-            <div  onClick={()=>{bookSeat(value?.seat_number)}}>
+            <div className='bookSeat' onClick={() => { bookSeat(value?.seat_number) }} >
               <div className='seat_book'><h3>{value?.seat_name}</h3></div>
               <h4>{ value?.seat_row}</h4>
             </div>
