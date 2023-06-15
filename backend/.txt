@@ -1,7 +1,7 @@
 // all api information 
 
 1. create a seat
- api : http://localhost:5000/book-my-seat/create-seat
+ api : https://backend-unpstop.onrender.com/book-my-seat/create-seat
 request:
  {
     "seat_name":"1",
@@ -18,7 +18,7 @@ response:
     "data": []
 }
 2. get seat 
-api :http://localhost:5000/book-my-seat/get-seat
+api :https://backend-unpstop.onrender.com/book-my-seat/get-seat
 
 request:
 {
@@ -76,7 +76,7 @@ response:
 }
 
 3. Book Seat
-api: http://localhost:5000/book-my-seat/book-seat
+api: https://backend-unpstop.onrender.com/book-my-seat/book-seat
 
 request:
 {
