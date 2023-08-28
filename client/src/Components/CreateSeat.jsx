@@ -88,7 +88,7 @@ const CreateSeat = () => {
                             <span>Seat Row Number</span>
                             <i></i>
                         </div>
-                        <button type='button' onClick={craeteSeat}>Create Seat</button>
+                        <button className='btn-1' type='button' onClick={craeteSeat}>Create Seat</button>
                     </form>
 
                     <ToastContainer />

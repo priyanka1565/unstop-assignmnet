@@ -81,6 +81,7 @@
     animation-delay: -1.5s;
 }
 
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -209,4 +210,12 @@
 
 .box form .inputBox input[type="submit"] {
     opacity: 0.8;
+}
+
+.btn-1 {
+    height: 50px;
+    width: 150px;
+    border: 5px solid gray;
+    margin-top: 20px;
+    
 }
